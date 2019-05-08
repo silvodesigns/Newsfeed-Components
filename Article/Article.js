@@ -10,6 +10,9 @@ class Article {
     this.expandButton.textContent = "expand";;
     this.expandButton.addEventListener('click', () => this.expandArticle());
     // Set a click handler on the expandButton reference, calling the expandArticle method.
+    /*WHY DOES THE ABOVE LINE WORK AND THE FOLLOWING DOES NOT
+        this.expandButton.addEventListener('click', this.expandArticle());
+    */
     
   }
 
